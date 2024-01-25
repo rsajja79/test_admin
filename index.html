@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Request VirtualTA Service</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/png" href="./logo.png" />
+  </head>
+  <body>
+    <div class="logo-container">
+        <a href="https://hydroinformatics.uiowa.edu/"
+          ><img src="./Logo.png"/></a>
+      </div>
+    <h1>Request VirtualTA Service</h1>
+    <form>
+      <label for="course-number">Course Number:</label>
+      <input type="text" id="course-number" name="course-number"><br><br>
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="email"><br><br>
+      <label>Toggle:</label><br>
+      <label><input type="checkbox" id="discussions" name="discussions">Discussions</label><br>
+      <label><input type="checkbox" id="assignments" name="assignments">Assignments</label><br>
+      <label><input type="checkbox" id="announcements" name="announcements">Announcements</label><br>
+      <label><input type="checkbox" id="files" name="files">Files</label><br>
+      <label><input type="checkbox" id="modules" name="modules">Modules</label><br>
+      <label><input type="checkbox" id="recordings" name="recordings">Recordings</label><br><br>
+      <input type="button" value="Submit" onclick="sendData()">
+    </form>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
